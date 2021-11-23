@@ -336,7 +336,7 @@ header .home img {
     }
 
     header .menu .navbar a:hover {
-        font-weight: 900;
+        text-shadow: 0.5px .5px white;
     }
 
     header .menu .navbar .fa-search {
