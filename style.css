@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    height: 525px;
+    background: url(imagens/back-top-home.png) no-repeat;
+}
+
+header .menu {
+    display: flex;
+    padding-top: 35px;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .menu .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+
+header .menu .logo img{
+    width: 130px;
+    cursor: pointer;
+}
+
+header .menu .logo a {
+    font-size: 18px;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+header .menu .logo a i {
+    margin-left: 5px;
+}
+
+header .menu .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0px 20px;
+    overflow: hidden;
+
+}
+
+header .menu .navbar a {
+    font-size: 18px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+header .menu .navbar a:hover {
+    text-shadow: 0.5px .5px white;
+}
+
+header .menu .navbar .btn {
+    font-size: 16px;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    white-space: nowrap;
+    transition: linear .3s;
+}
+
+header .menu .navbar .btn:hover {
+    border: 2px solid red;
+    background: red;
+    border-radius: 50px;
+    text-shadow: none;
+}
+
+header .menu .navbar .btn .fa-user {
+    margin-right: 8px;
+}
+
+header .home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 210px;
+}
+
+header .home .info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+header .home .info h1 {
+    width: 520px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 82px;
+    line-height: 1;
+}
+
+header .home .info h1 span {
+    font-weight: 700;
+}
+
+header .home .info p {
+    color: #fff;
+    font-size: 18px;
+}
+
+header .home .info .botoes {
+    display: flex;
+}
+
+header .home .info .botoes a {
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px 0px;
+}
+
+header .home .info .botoes .btn1 {
+    background: red;
+    border-radius: 50px;
+    margin-right: 5px;
+    white-space: nowrap;
+    transition: linear .3s;
+}
+
+header .home .info .botoes .btn1:hover {
+    background: linear-gradient(to right, rgb(255, 0, 0), rgba(255, 255, 0, 0.2));
+}
+
+header .home .info .botoes .btn2 {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    white-space: nowrap;
+    transition: linear .3s;
+}
+
+header .home .info .botoes .btn2:hover {
+    border: 2px solid red;
+    background: red;
+    border-radius: 50px;
+}
+
+header .home .info .cadastro {
+    display: flex;
+}
+
+header .home .info .cadastro a {
+    position: relative;
+    z-index: 0;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #fff;
+    transition: linear .3s;
+}
+
+header .home .info .cadastro a:before {
+    transition: .3 linear;
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50px;    
+    z-index: -1;
+    background: #fff;
+    clip-path: polygon(0% 90%, 100% 90%, 100% 100%, 0% 100%);
+}
+
+header .home .info .cadastro a:hover {
+    letter-spacing: 1px;
+}
+
+header .home img {
+    width: 525px;
+}
+
+.corpo .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 125px;
+}
+
+.corpo .box .caracteristicas {
+    display: flex;
+    flex-direction: column;
+    min-width: 310px;
+    color: rgba(0, 0, 0, 0.75);
+    margin: 0px 10px;
+}
+
+.corpo .box .caracteristicas .icon {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.corpo .box .caracteristicas .icon img {
+    width: 100;
+}
+
+.corpo .box .caracteristicas h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.corpo .box .caracteristicas p {
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+@media (max-width:1400px) {
+    header .menu .logo a {
+        font-size: 17px;
+    }
+
+    header .menu .navbar a {
+        font-size: 16px;
+    }
+
+    header .home .info h1 {
+        width: 500px;
+    }
+
+    header .home .info .botoes {
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+
+    header .home .info .botoes a {
+        margin: 5px 0px;
+    }
+
+    .corpo .box .caracteristicas {
+        min-width: 200px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    header {
+        height: 480px;
+    }
+
+    header .menu .logo {
+        padding: 0px 40px;
+    }
+    header .menu .logo img{
+        width: 100px;
+    }
+
+    header .menu .logo a {
+        font-size: 15px;
+    }
+
+    header .menu .navbar a {
+        font-size: 14px;
+    }
+
+    header .menu .navbar .btn {
+        font-size: 14px;
+    }
+
+    header .home .info {
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+
+    header .home img {
+        width: 450px;
+    }
+
+    header .home .info h1 {
+        width: 420px;
+        font-size: 70px;
+    }
+
+    header .home .info .botoes a {
+        width: 400px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:992px) {
+    header {
+        height: 800px;
+        background-size: cover;
+    }
+
+    header .menu .logo{
+        display: none;
+    }
+
+    header .menu #nav {
+        display: none;
+        text-align: center;
+        justify-content: flex-start;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: #f08830;
+        height: 0;
+        overflow: hidden;
+        z-index: 1000;
+        visibility: hidden;
+    }
+
+    header .menu .navbar a {
+        font-size: 20px;
+        font-weight: 600;
+        width: 50%;
+        padding: 20px 0px;
+    }
+
+    header .menu .navbar .btn {
+        font-size: 18px;
+    }
+
+    header .menu .navbar a:hover {
+        font-weight: 900;
+    }
+
+    header .menu .navbar .fa-search {
+        display: none;
+    }
+
+    #menu.active #nav {
+        display: flex;
+        flex-direction: column;
+        height: 200%;
+        visibility: visible;
+    }
+
+    #inicio.active #mobile {
+        background: #f08830;
+    }
+
+    header .mobile {
+        margin: auto;
+        width: 78%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 0px;
+    }
+    
+    header .mobile a {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    header .mobile .menu-mobile {
+        width: 150px;
+    }
+
+    header .mobile .centro {
+        text-align: center;
+        width: 200px;
+    }
+
+    header .mobile .centro img {
+        width: 100px;
+    }
+
+    header .mobile .icones {
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .home {
+        flex-direction: column;
+    }
+
+    header .home .info {
+        text-align: center;
+        padding: 0;
+    }
+
+    header .home .info h1 {
+        width: 650px;
+        font-size: 60px;
+    }
+
+    header .home .info .botoes {
+        margin: auto;
+    }
+
+    header .home .info .botoes a {
+        align-items: center;
+        text-align: center;
+    }
+    
+    header .home .info .botoes .btn1 {
+        width: 225px;
+    }
+     
+    header .home .info .botoes .btn2 {
+        width: 325px;
+    }
+
+    header .home .info .cadastro {
+        margin: auto;
+    }
+
+    header .home img {
+        width: 550px;
+    }
+
+    .corpo .box {
+        margin: 0;
+        padding: 50px 40px;
+        flex-wrap: wrap;
+    }
+
+    .corpo .box .caracteristicas {
+        width: 300px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:768px) {
+
+    header {
+        height: 950px;
+        background-size: cover;
+    }
+
+    header .mobile {
+        width: 75%;
+    }
+
+    header .mobile .menu-mobile {
+        width: 100px;
+    }
+
+    header .mobile .centro img {
+        width: 100px;
+    }
+
+    header .mobile .icones {
+        width: 100px;
+    }
+
+    header .home .info h1 {
+        width: 550px;
+        font-size: 60px;
+    }
+
+    header .home .info .botoes {
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px 0px;
+    }
+
+    header .home .info .botoes .btn1 {
+        width: 225px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+     
+    header .home .info .botoes .btn2 {
+        width: 325px;
+        margin: 0;
+    }
+
+    .corpo .box {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .corpo .box .caracteristicas{
+        width: 600px;
+    }
+
+    .corpo .box .caracteristicas .icon{
+        margin: auto;
+    }
+}
+
+@media (max-width:574px) {
+    header {
+        height: 900px;
+        background-size: 450%;
+    }
+
+    header .home img {
+        width: 400%;
+    }
+
+    header .home .info .botoes {
+        width: 500px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    header .home .info .botoes .btn1 {
+        width: 450px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+     
+    header .home .info .botoes .btn2 {
+        width: 450px;
+        margin: 0;
+    }
+}
+
+@media (max-width:520px) {
+
+    header {
+        height: 800px;
+        background-size: 450%;
+    }
+
+    header .home img {
+        width: 600%;
+    }
+}
