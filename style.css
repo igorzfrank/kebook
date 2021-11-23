@@ -166,6 +166,7 @@ header .home .info .cadastro a {
     margin-left: 15px;
     font-size: 16px;
     color: #fff;
+    white-space: nowrap;
     transition: linear .3s;
 }
 
@@ -473,14 +474,12 @@ header .home img {
     }
 
     header .home .info .botoes .btn1 {
-        width: 225px;
-        margin: auto;
+        width: 325px;
         margin-bottom: 10px;
     }
      
     header .home .info .botoes .btn2 {
         width: 325px;
-        margin: 0;
     }
 
     .corpo .box {
@@ -499,40 +498,96 @@ header .home img {
 
 @media (max-width:574px) {
     header {
-        height: 900px;
-        background-size: 450%;
+        height: 950px;
+        background-size: cover;
     }
 
     header .home img {
-        width: 400%;
+        max-width: 450px;
     }
 
-    header .home .info .botoes {
-        width: 500px;
-        text-align: center;
-        align-items: center;
-    }
-    
-    header .home .info .botoes .btn1 {
-        width: 450px;
+    header .home .info p {
         margin: auto;
-        margin-bottom: 10px;
+        width: 350px;
     }
-     
-    header .home .info .botoes .btn2 {
-        width: 450px;
+
+    header .home .info h1 {
+        margin: auto;
+        font-size: 55px;
+        width: 300px;
+    }
+
+    header .home .cadastro {
+        width: 300px;
+        display: flex;
         margin: 0;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    header .home .cadastro p{
+        font-size: 14px;
+    }
+
+    header .home .cadastro a{
+        font-size: 12px;
     }
 }
 
 @media (max-width:520px) {
 
     header {
-        height: 800px;
-        background-size: 450%;
+        height: 900px;
+        background-size: cover;
     }
 
     header .home img {
-        width: 600%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width:420px) {
+    header {
+        height: 750px;
+        background-size: cover;
+    }
+
+    header .home img {
+        max-width: 280px;
+    }
+
+    .inicio header .home {
+        margin: auto;
+    }
+
+    header .home .info h1 {
+        margin: auto;
+        font-size: 40px;
+        width: 250px;
+    }
+
+    header .home .info p {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    header .home .info .botoes .btn1 {
+        font-size: 14px;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+     
+    header .home .info .botoes .btn2 {
+        font-size: 14px;
+        width: 250px;
+    }
+
+    .inicio header .home .cadastro p{
+        font-size: 12px;
+    }
+
+    .inicio header .home .cadastro a{
+        font-size: 12px;
+        padding-right: 20px;
     }
 }
